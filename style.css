@@ -13,8 +13,12 @@ main {
 
 header {
   width: 100%;
-  background-color: #fef8e6;
+
   height: 80px;
+}
+h2 {
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .card {
@@ -64,6 +68,7 @@ header {
   color: #742305;
   font-size: 1.1em;
   order: 5;
+  align-self: center;
 }
 
 .addToCart {
@@ -90,7 +95,8 @@ h1 {
 }
 
 .navigationBar {
-  height: 85px;
+  height: 100%;
+  width: 100%;
   display: flex;
   background-color: #fef8e6;
 }
@@ -156,8 +162,56 @@ h1 {
   clear: both;
 }
 
-@media (max-width: 576px) {
-  article img {
-    order: unset;
+@media screen and (max-width: 576px) {
+  header {
+    margin: 0 auto;
+    width: 80%;
+    height: 199px;
+    margin-top: 30px;
+  }
+
+  .navigationBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 60px 60px;
+  }
+  .bigButton {
+    flex: 1 1 80%;
+    order: -1;
+    text-align: center;
+    margin: 0 5%;
+    margin-top: 10px;
+    gap: 26px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navigationBar::after {
+    display: block;
+    clear: both;
+  }
+  h1 {
+    text-align: center;
+  }
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 83%;
+  }
+  .content {
+    gap: 35px;
+  }
+  .addToCart {
+    width: 180px;
+  }
+  .article p {
+    font-size: 1rem;
+    font-weight: 500;
   }
 }
