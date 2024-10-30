@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  height: 400px;
+  color: #490f0fcb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 60px;
+  background-color: #fef8e6;
+  margin: 30px;
+  align-items: center;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+.image {
+  background-image: url("https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  width: 100%;
+}
+
+.text {
+  text-align: center;
+  color: #4a2e14;
+  font-size: 0.9em;
+  padding: 15px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 90px;
+}
+
+.text span {
+  font-weight: bold;
+  color: #4a2e14;
+  font-size: 1.2em;
+}
+
+.price {
+  color: #4a2e14;
+  font-size: 1.1em;
+  order: 5;
+}
+
+.addToCart {
+  background-color: #fdd96e;
+  color: #4a2e14;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 33px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.navigationBar {
+  height: 50px;
+  display: flex;
+  background-color: #fef8e6;
+  border-radius: 40px;
+}
+.buttons {
+  background-color: #fdd96e;
+  color: #4a2e14;
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+  font-size: 1em;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.article {
+  clear: both;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fef8e6;
+  margin-top: 25px;
+}
+
+.article img {
+  height: auto;
+  width: 241px;
+  float: left;
+  margin-right: 0.5rem;
+  margin-top: 25px;
+}
+.article p {
+  margin-right: 20px;
+  font-size: 0.8rem;
+}
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 576px) {
+}
