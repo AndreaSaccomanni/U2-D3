@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 main {
@@ -18,15 +19,15 @@ header {
 
 .card {
   font-family: Arial, Helvetica, sans-serif;
-  width: 39%;
+  width: 44%;
   height: 300px;
-  color: #490f0fcb;
+  color: #742305;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: 60px;
   background-color: #fef8e6;
-  margin: 30px;
+  margin: 15px;
   align-items: center;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,7 +43,7 @@ header {
 
 .text {
   text-align: center;
-  color: #4a2e14;
+  color: #742305;
   font-size: 0.9em;
 }
 
@@ -55,19 +56,19 @@ header {
 
 .text span {
   font-weight: bold;
-  color: #4a2e14;
+  color: #742305;
   font-size: 1.2em;
 }
 
 .price {
-  color: #4a2e14;
+  color: #742305;
   font-size: 1.1em;
   order: 5;
 }
 
 .addToCart {
   background-color: #fdd96e;
-  color: #4a2e14;
+  color: #742305;
   border: none;
   border-radius: 20px;
   padding: 10px 33px;
@@ -81,10 +82,11 @@ header {
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: space-between;
 }
 h1 {
-  color: #4a2e14;
+  color: #742305;
+  font-weight: 900;
 }
 
 .navigationBar {
@@ -94,7 +96,7 @@ h1 {
 }
 .buttons {
   background-color: #fdd96e;
-  color: #4a2e14;
+  color: #742305;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -108,24 +110,30 @@ h1 {
   height: 39px;
 }
 .bigButton {
+  display: flex;
   height: 65px;
   width: 100px;
   background-color: #fdd96e;
-  color: #4a2e14;
+  color: #742305;
   border: none;
   border-radius: 80px;
   cursor: pointer;
   font-size: 1em;
   margin: 10px auto;
-  text-align: center;
+  align-items: center;
   font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
 }
 .bigButton img {
-  height: 20px;
+  height: 25px;
+}
+.bigButton div {
+  font-size: 18px;
 }
 
 .article {
-  color: #83470e;
+  color: #742305;
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #fef8e6;
