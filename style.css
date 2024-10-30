@@ -3,11 +3,23 @@
 *::before {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
+main {
+  margin: 8px;
+}
+
+header {
+  width: 100%;
+  background-color: #fef8e6;
+  height: 80px;
+}
 
 .card {
   font-family: Arial, Helvetica, sans-serif;
-  width: 300px;
-  height: 400px;
+  width: 39%;
+  height: 300px;
   color: #490f0fcb;
   display: flex;
   flex-direction: column;
@@ -32,13 +44,13 @@
   text-align: center;
   color: #4a2e14;
   font-size: 0.9em;
-  padding: 15px;
 }
 
 .content {
+  margin-top: 10px;
   display: flex;
   width: 100%;
-  gap: 90px;
+  gap: 20px;
 }
 
 .text span {
@@ -62,6 +74,8 @@
   cursor: pointer;
   font-size: 1em;
   margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 .cardContainer {
   display: flex;
@@ -74,46 +88,54 @@ h1 {
 }
 
 .navigationBar {
-  height: 50px;
+  height: 85px;
   display: flex;
   background-color: #fef8e6;
-  border-radius: 40px;
 }
 .buttons {
   background-color: #fdd96e;
   color: #4a2e14;
   border: none;
   border-radius: 20px;
-
   cursor: pointer;
-  font-size: 1em;
+
   margin: 10px auto;
   text-align: center;
+  height: 30px;
+  font-weight: bold;
+  align-self: center;
+  width: 100px;
+  height: 39px;
 }
-.buttons .bigButton {
+.bigButton {
+  height: 65px;
+  width: 100px;
   background-color: #fdd96e;
   color: #4a2e14;
   border: none;
-  border-radius: 20px;
-
+  border-radius: 80px;
   cursor: pointer;
   font-size: 1em;
   margin: 10px auto;
   text-align: center;
+  font-weight: bold;
+}
+.bigButton img {
+  height: 20px;
 }
 
 .article {
-  clear: both;
+  color: #83470e;
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #fef8e6;
   margin-top: 25px;
+  border-radius: 20px;
 }
 
 .article img {
-  height: auto;
   width: 100%;
-  float: left;
+
   margin-right: 0.5rem;
   margin-top: 25px;
 }
@@ -127,4 +149,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
+  article img {
+    order: unset;
+  }
 }
